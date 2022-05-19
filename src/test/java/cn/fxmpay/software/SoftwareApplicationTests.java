@@ -1,4 +1,4 @@
-package cn.fxmpay.software.software;
+package cn.fxmpay.software;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
