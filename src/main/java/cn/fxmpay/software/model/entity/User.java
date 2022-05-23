@@ -9,11 +9,14 @@ public class User {
 
     private String username;
 
+    private String phone;
+
     private String password;
 
-    public User(Integer id, String username, String password) {
+    public User(Integer id, String username, String phone, String password) {
         this.id = id;
         this.username = username;
+        this.phone = phone;
         this.password = password;
     }
 
@@ -36,6 +39,14 @@ public class User {
         this.username = username;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -49,6 +60,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
+                ", phone='" + phone + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

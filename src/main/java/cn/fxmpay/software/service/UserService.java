@@ -1,6 +1,7 @@
 package cn.fxmpay.software.service;
 
 import cn.fxmpay.software.model.entity.User;
+import cn.fxmpay.software.utils.JsonData;
 
 import java.util.List;
 
@@ -16,4 +17,14 @@ public interface UserService {
     List<User> findAllUser();
 
 
+    /**
+     * 用户登录 = 根据手机号和密码查找
+     * @param phone
+     * @param pwd
+     * @return
+     */
+    String findByPhoneAndPassword(String phone, String pwd);
+
+
+    int register(User user);
 }

@@ -18,7 +18,18 @@ public interface UserMapper {
     List<User> findAllUser();
     User findById(@Param("id")Integer id);
 
+    /**
+     *用户登录 = 根据手机号和密码查找
+     * @param phone
+     * @param password
+     * @return
+     */
+    User findByPhoneAndPassword(@Param("phone")String phone,@Param("password")String password);
 
+
+
+
+    int insertList(@Param("list")List<User> list);
 
 
 }
